@@ -1,6 +1,6 @@
 class Solution:
     def addBinary(self, a: str, b: str) -> str:
-        ans=[]
+        answer=[]
         carry=0
         i=len(a)-1
         j=len(b)-1
@@ -11,7 +11,7 @@ class Solution:
             if j>=0:
                 carry+=int(b[j])
                 j-=1
-            ans.append(str(carry%2))
+            answer.append(str(carry%2))
             carry=carry//2
-        return ''.join(reversed(ans))
+        return ''.join(reversed(answer))
             
